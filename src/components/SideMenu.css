@@ -1,0 +1,58 @@
+.side-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 2.25rem;
+  align-self: flex-start;
+  position: relative;
+  padding-top: 8rem;
+  max-height: calc(100vh - 5rem);
+  /* overflow-y: auto; */
+  padding-right: 0.75rem;
+}
+
+/* .side-menu {
+  scrollbar-width: thin; Firefox
+  scrollbar-color: rgba(255, 255, 255, 0.4) transparent;
+} */
+
+/* .side-menu::-webkit-scrollbar {
+  width: 6px;
+} */
+/* 
+.side-menu::-webkit-scrollbar-track {
+  background: transparent;
+} */
+
+/* .side-menu::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.4);
+  border-radius: 999px;
+} */
+
+.menu-item {
+  position: relative;
+  background: transparent;
+  border: none;
+  color: #ffffff;
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-align: left;
+  padding: 0;
+  cursor: pointer;
+  text-transform: capitalize;
+  letter-spacing: 0.01em;
+  white-space: nowrap;
+}
+
+.menu-item::after {
+  content: '›';
+  position: absolute;
+  right: -2rem;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 1.25rem;
+}
+
+.menu-item:hover {
+  color: #ffffff;
+  transform: translateX(6px);
+}
+

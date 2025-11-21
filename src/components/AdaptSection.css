@@ -1,0 +1,39 @@
+.adapt {
+  display: flex;
+  justify-content: center;
+  padding: 4.5rem 0;
+  background: #020202;
+}
+
+.adapt__inner {
+  width: min(900px, 90vw);
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+  align-items: center;
+}
+
+.adapt__title {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #ffffff;
+  text-align: center;
+}
+
+.adapt__description {
+  background: #333333;
+  color: rgba(255, 255, 255, 0.88);
+  font-size: 0.95rem;
+  line-height: 1.7;
+  padding: 1.8rem 2rem;
+  border-radius: 18px;
+  box-shadow: 0 24px 70px rgba(0, 0, 0, 0.45);
+  text-align: center;
+}
+
+@media (max-width: 640px) {
+  .adapt__description {
+    padding: 1.5rem;
+    font-size: 0.92rem;
+  }
+}

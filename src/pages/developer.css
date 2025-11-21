@@ -1,0 +1,61 @@
+.developer-login__breadcrumb {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  padding-left: 1rem;
+}
+
+.developer-login__breadcrumb-text {
+  font-size: 0.98rem;
+  font-weight: 550;
+  text-transform: capitalize;
+}
+
+.developer-login-subheading {
+  margin: 0.5rem 0 1.5rem;
+  font-size: 1rem;
+  font-weight: 500;
+  margin-left: 6%;
+}
+
+.developer-login-card {
+  margin-top: 2rem;
+  height: 60%;
+  width: 420px;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 2.25rem 2.5rem 3rem;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  background: #050505;
+  box-sizing: border-box;
+}
+
+.developer-login-card .developer-login-heading {
+  text-align: center;
+  margin: 0 0 1.75rem;
+  font-size: 1.1rem;
+}
+
+.developer-login-icon {
+  width: 96px;
+  height: 96px;
+  margin: 0 auto 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.developer-login-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+.developer-login-label {
+  text-align: center;
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin-bottom: 2rem;
+}

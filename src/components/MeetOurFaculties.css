@@ -1,0 +1,54 @@
+
+
+.meet-faculties {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 3.75rem 0 3.25rem;
+}
+
+.meet-faculties__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.4rem;
+  max-width: 960px;
+  width: 100%;
+  text-align: center;
+}
+
+.meet-faculties__title {
+  font-size: 2.8rem;
+  font-weight:700;
+}
+
+.meet-faculties__image-wrapper {
+  width: min(520px, 85vw);
+  border-radius: 24px;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.meet-faculties__image {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+@media (max-width: 600px) {
+  .meet-faculties {
+    padding: 2.5rem 0;
+  }
+
+  .meet-faculties__title {
+    font-size: 2.1rem;
+  }
+
+  .meet-faculties__inner {
+    gap: 2.1rem;
+  }
+
+  .meet-faculties__image-wrapper {
+    width: min(320px, 85vw);
+  }
+}

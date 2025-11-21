@@ -1,0 +1,137 @@
+.student-login__breadcrumb {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  padding-left: 1rem;
+}
+
+.student-login__breadcrumb-text {
+  font-size: 0.98rem;
+  font-weight: 550;
+  text-transform: capitalize;
+}
+
+.login-subheading {
+  /* margin: 0.5rem 0 1.5rem; */
+  font-size: 1.05rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  text-align: right;
+  text-transform: capitalize;
+  margin-right: 75%;
+}
+
+.login-card .login-heading {
+  text-align: center;
+  margin: 0 0 1.75rem;
+  font-size: 1.1rem; /* match .student-login-label size */
+}
+
+.login-card {
+  margin-top: 2rem;
+  width: 480px;
+  max-width: 100%;
+  min-height: 540px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 3rem 3rem 3.75rem;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  background: #050505;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.75rem;
+}
+
+.icon-placeholder {
+  width: 96px;
+  height: 96px;
+  margin: 0 auto 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 0;
+}
+
+.icon-placeholder__img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+.student-login-label {
+  text-align: center;
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin-bottom: 1.75rem;
+}
+
+.student-login__form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+  width: 100%;
+}
+
+.student-login__input {
+  width: 100%;
+  background: #111111;
+  border-radius: 4px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  padding: 0.8rem 0.9rem;
+  color: #ffffff;
+  box-sizing: border-box;
+}
+
+.student-login__input::placeholder {
+  color: rgba(255, 255, 255, 0.55);
+}
+
+.student-login__password-row {
+  display: block;
+  position: relative;  /* allows placing eye icon inside the input */
+}
+
+.student-login__input--password {
+  padding-right: 2.6rem; /* space for eye icon inside the box */
+}
+
+.student-login__password-toggle {
+  position: absolute;
+  top: 50%;
+  right: 0.75rem;
+  transform: translateY(-50%);
+  padding: 0;
+  border: none;
+  background: transparent;
+  color: #ffffff;
+  font-size: 0.95rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.admin-button {
+  margin-top: auto;
+  align-self: center;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.6rem 2.6rem;
+  min-width: 140px;
+  border-radius: 999px;
+  border: none;
+  background: #ffffff;
+  color: #000000;
+  font-weight: 600;
+  font-size: 0.95rem;
+  text-transform: lowercase;
+  letter-spacing: 0.02em;
+  text-align: center;
+  cursor: pointer;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.35);
+}

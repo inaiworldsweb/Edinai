@@ -1,0 +1,135 @@
+.vision {
+  display: flex;
+  justify-content: center;
+  padding: 6rem 0 3rem;
+  background: #010101;
+}
+
+.vision__inner {
+  width: min(1180px, 94vw);
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  align-items: center;
+  text-align: center;
+}
+
+.vision__header {
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+  color: #ffffff;
+  max-width: 720px;
+}
+
+.vision__title {
+  font-size: 2.8rem;
+  font-weight: 800;
+}
+
+.vision__lead {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.vision__description {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.76);
+}
+
+.vision__description--bold {
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.vision__implementation {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  color: #ffffff;
+}
+
+.vision__implementation-title {
+  font-size: 2.4rem;
+  font-weight: 800;
+}
+
+.vision__implementation-subtitle {
+  font-size: 1.05rem;
+  font-weight: 600;
+  text-align: left;
+}
+
+
+.vision__grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 2.5rem;
+}
+
+.vision__step {
+  display: flex;
+  flex-direction: column;
+  gap: 1.15rem;
+  align-items: flex-start;
+}
+
+.vision__media {
+  width: 100%;
+  max-width: 420px;
+  border-radius: 28px;
+  overflow: hidden;
+  box-shadow: 0 28px 70px rgba(0, 0, 0, 0.45);
+}
+
+.vision__image {
+  width: 100%;
+  display: block;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+
+.vision__step-title {
+  font-size: 1.05rem;
+  line-height: 1.65;
+  color: rgba(255, 255, 255, 0.88);
+}
+
+.vision__cta {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.vision__cta-button {
+  padding: 0.85rem 2.6rem;
+  border-radius: 999px;
+  border: none;
+  background: #ffffff;
+  color: #000000;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.vision__cta-button:hover {
+  background: rgba(255, 255, 255, 0.85);
+}
+
+@media (max-width: 640px) {
+  .vision__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .vision__implementation-title {
+    font-size: 2rem;
+  }
+
+  .vision__title {
+    font-size: 2.4rem;
+  }
+}

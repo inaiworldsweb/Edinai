@@ -1,0 +1,139 @@
+.portal-section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 4.5rem 0;
+}
+
+.portal-section__inner {
+  width: min(1020px, 90vw);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 2.5rem;
+}
+
+.portal-section__title {
+  font-size: 2.75rem;
+  font-weight: 700;
+}
+
+.portal-section__subtitle {
+  max-width: 680px;
+  color: rgba(255, 255, 255, 0.82);
+  font-size: 1rem;
+  line-height: 1.7;
+  margin: 0 auto;
+}
+
+.portal-section__slide {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
+  align-items: center;
+}
+
+.portal-section__slide-title {
+  font-size: 1.35rem;
+  font-weight: 700;
+}
+
+.portal-section__image-wrapper {
+  width: 100%;
+  max-width: 780px;
+  border-radius: 24px;
+  overflow: hidden;
+  border: 2px solid rgba(63, 162, 255, 0.65);
+}
+
+.portal-section__image {
+  width: 100%;
+  display: block;
+  border-radius: 16px;
+  object-fit: cover;
+}
+
+.portal-section__dots {
+  display: flex;
+  justify-content: center;
+  gap: 0.55rem;
+}
+
+.portal-section__dot {
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.24);
+  border: none;
+  cursor: pointer;
+}
+
+.portal-section__dot--active {
+  background: #ffffff;
+}
+
+.portal-section__caption {
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.portal-section__details {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  max-width: 760px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.portal-section__bullet {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: #ffffff;
+  margin-top: 0.55rem;
+}
+
+.portal-section__description {
+  color: rgba(255, 255, 255, 0.82);
+  line-height: 1.7;
+}
+
+.portal-section__cta {
+  margin-top: 1.2rem;
+  padding: 0.85rem 2.6rem;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  background: transparent;
+  color: #ffffff;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  cursor: pointer;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.portal-section__cta:hover {
+  background: #ffffff;
+  color: #000000;
+}
+
+@media (max-width: 768px) {
+  .portal-section {
+    padding: 3.5rem 0;
+  }
+
+  .portal-section__inner {
+    gap: 2rem;
+  }
+
+  .portal-section__slide {
+    padding: 2rem 1.75rem 2.5rem;
+  }
+
+  .portal-section__title {
+    font-size: 2.2rem;
+  }
+}
