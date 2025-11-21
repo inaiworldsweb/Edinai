@@ -61,14 +61,14 @@ const AdminLoginPage = ({
           </div>
         </header>
 
-        <p className="admin-login-subheading">Login Here With Your Creds</p>
+        <p className="login-subheading">Login Here With Your Creds</p>
 
-        <div className="admin-login-card">
-          <h1 className="admin-login-heading">Enter Your Details</h1>
-          <div className="admin-login-icon">
-            <img src={adminIcon} alt="Admin login icon" />
+        <div className="login-card">
+          <h1 className="login-heading">Enter your details</h1>
+          <div className="icon-placeholder">
+            <img src={adminIcon} alt="Admin login icon" className="icon-placeholder__img" />
           </div>
-          <p className="admin-login-label">Admin Login</p>
+          <p className="student-login-label">Admin Login</p>
           <form className="student-login__form" onSubmit={(e) => e.preventDefault()}>
             <input
               type="text"

@@ -62,14 +62,14 @@ const DeveloperPage = ({
           </div>
         </header>
 
-        <p className="developer-login-subheading">Login Here With Your Creds</p>
+        <p className="login-subheading">Login Here With Your Creds</p>
 
-        <div className="developer-login-card">
-          <h1 className="developer-login-heading">Enter Your Details</h1>
-          <div className="developer-login-icon">
-            <img src={adminIcon} alt="Developer login icon" />
+        <div className="login-card">
+          <h1 className="login-heading">Enter your details</h1>
+          <div className="icon-placeholder">
+            <img src={adminIcon} alt="Developer login icon" className="icon-placeholder__img" />
           </div>
-          <p className="developer-login-label">Developer Login</p>
+          <p className="student-login-label">Developer Login</p>
           <form className="student-login__form" onSubmit={(e) => e.preventDefault()}>
             <input type="text" className="student-login__input" placeholder="Username" />
             <div className="student-login__password-row">

@@ -53,13 +53,20 @@ const StudentLoginPage = ({
                 />
               </svg>
             </button>
+            <button type="button" className="icon-button" aria-label="Open menu">
+              <svg className="icon" viewBox="0 0 24 24" aria-hidden="true">
+                <line x1="5" y1="8" x2="19" y2="8" stroke="currentColor" strokeWidth="1.8" />
+                <line x1="5" y1="12" x2="19" y2="12" stroke="currentColor" strokeWidth="1.8" />
+                <line x1="5" y1="16" x2="19" y2="16" stroke="currentColor" strokeWidth="1.8" />
+              </svg>
+            </button>
           </div>
         </header>
 
         <p className="login-subheading">Login Here With Your Creds</p>
 
         <div className="login-card">
-          <h1 className="login-heading">Enter Your Details</h1>
+          <h1 className="login-heading">Enter your details</h1>
           <div className="icon-placeholder">
             <img src={studentLoginIcon} alt="Student login icon" className="icon-placeholder__img" />
           </div>

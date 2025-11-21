@@ -236,7 +236,7 @@ const EdInaiPage = ({ onBack }) => {
           </div>
         </section>
 
-        <LearningModesSection />
+        {/* <LearningModesSection /> */}
 
         <section className="edinai-future" id="why-ed-inai">
           <div className="edinai-future__inner">
@@ -256,7 +256,7 @@ const EdInaiPage = ({ onBack }) => {
             </div>
           </div>
 
-          
+
         </section>
         <VisionSection />
           <IntegrationOptionsSection />

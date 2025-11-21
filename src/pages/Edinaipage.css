@@ -23,7 +23,7 @@
   flex-direction: column;
   gap: 4.5rem;
   overflow-y: auto;
-  padding-right: 1.5rem;
+  padding: 2.5rem 3.5rem 3.5rem 3.5rem;
   max-height: 100vh;
 }
 
@@ -122,9 +122,9 @@
 .edinai-overview {
   display: flex;
   flex-direction: column;
-  gap: 2.5rem;
+  /* gap: 0.2rem; */
   align-items: center;
-  padding-bottom: 4rem;
+  /* padding-bottom: -1.5rem; */
 }
 
 .edinai-overview__title {
@@ -136,7 +136,7 @@
 .edinai-overview__grid {
   display: flex;
   flex-direction: column;
-  gap: 2.5rem;
+  gap: 2rem;
   width: 100%;
   max-width: 980px;
 }
@@ -144,7 +144,7 @@
 .edinai-overview__row {
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
-  gap: 2.25rem;
+  gap: 2rem;
   align-items: center;
 }
 
@@ -170,14 +170,14 @@
 
 .edinai-overview__description {
   font-size: 1rem;
-  line-height: 1.7;
+  line-height: 1.6;
   color: rgba(255, 255, 255, 0.88);
 }
 
 .edinai-overview__description--center {
   text-align: center;
   font-size: 1.05rem;
-  line-height: 1.75;
+  line-height: 1.65;
 }
 
 .edinai-overview__line {

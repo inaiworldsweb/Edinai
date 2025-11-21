@@ -12,24 +12,28 @@
 }
 
 .login-subheading {
-  /* margin: 0.5rem 0 1.5rem; */
+  margin: 0.75rem 550px 2rem auto;
   font-size: 1.05rem;
   font-weight: 600;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.025em;
   text-align: right;
   text-transform: capitalize;
-  margin-right: 75%;
+  width: fit-content;
+  margin-right: 79%;
 }
 
 .login-card .login-heading {
   text-align: center;
   margin: 0 0 1.75rem;
   font-size: 1.1rem; /* match .student-login-label size */
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: none;
 }
 
 .login-card {
-  margin-top: 2rem;
-  width: 480px;
+  /* margin-top: -0.1rem; */
+  width: 420px;
   max-width: 100%;
   min-height: 540px;
   margin-left: auto;

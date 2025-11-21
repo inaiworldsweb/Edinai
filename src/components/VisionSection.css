@@ -9,51 +9,72 @@
   width: min(1180px, 94vw);
   display: flex;
   flex-direction: column;
-  gap: 2.5rem;
-  align-items: center;
-  text-align: center;
+  gap: 3rem;
+  align-items: flex-start;
+  text-align: left;
 }
 
 .vision__header {
   display: flex;
   flex-direction: column;
-  gap: 0.9rem;
+  /* gap: 0.9rem; */
   color: #ffffff;
   max-width: 720px;
+  align-items: center;
+  
 }
 
 .vision__title {
-  font-size: 2.8rem;
+  font-size: 3.1rem;
   font-weight: 800;
+  align-self: center;
+  text-align: center;
+  margin-left: 60%;
 }
 
 .vision__lead {
   font-size: 1.2rem;
   font-weight: 600;
+  align-self: flex-start;
+  text-align: left;
+  max-width: 660px;
+  margin-left: 0;
+  margin-bottom: 0;
 }
 
 .vision__description {
   font-size: 1rem;
   line-height: 1.7;
   color: rgba(255, 255, 255, 0.76);
+  max-width: none;
+  text-align: left;
+  align-self: flex-start;
+  margin-left: 0;
+  margin: 0;
+  white-space: nowrap;
 }
 
 .vision__description--bold {
   font-weight: 600;
   color: rgba(255, 255, 255, 0.9);
+  text-align: left;
+  align-self: flex-start;
+  margin-left: 0;
+  margin: 0;
 }
 
 .vision__implementation {
   width: 100%;
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  /* gap: 1.5rem; */
   color: #ffffff;
 }
 
 .vision__implementation-title {
   font-size: 2.4rem;
   font-weight: 800;
+  align-self: center;
 }
 
 .vision__implementation-subtitle {
