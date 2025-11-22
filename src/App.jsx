@@ -6,6 +6,7 @@ import StudentLoginPage from './pages/StudentLoginPage'
 import AdminLoginPage from './pages/AdminLoginPage'
 import DeveloperPage from './pages/developer'
 import EdInaiPage from './pages/EdInaiPage'
+import EdInaiPricePage from './pages/EdInaiPricePage'
 import NoCodeDevelopmentPage from './pages/NoCodeDevelopmentPage'
 import InaiMarketingPage from './pages/InaiMarketingPage'
 import InaiCorporateAgentPage from './pages/InaiCorporateAgentPage'
@@ -29,7 +30,13 @@ function App() {
   }
 
   if (view === 'edInai') {
-    return <EdInaiPage onBack={() => setView('landing')} />
+    return <EdInaiPage onBack={() => setView('landing')} onGoToPrice={() => setView('edInaiPrice')} />
+  }
+
+  if (view === 'edInaiPrice') {
+    return (
+      <EdInaiPricePage onBack={() => setView('edInai')} onGoToEdInai={() => setView('edInai')} />
+    )
   }
 
   if (view === 'noCodeDevelopment') {

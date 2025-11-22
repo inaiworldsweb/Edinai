@@ -2,6 +2,7 @@ import './LoginPage.css'
 import './Edinaipage.css'
 import logoImage from '../assets/Inai Verse White Tred mark (1).png'
 import SideMenu from '../components/SideMenu'
+import SiteFooter from '../components/SiteFooter'
 import MeetOurFaculties from '../components/MeetOurFaculties'
 import EducationPortalSection from '../components/EducationPortalSection'
 import StudentExperienceSection from '../components/StudentExperienceSection'
@@ -99,7 +100,18 @@ const overviewItems = [
   },
 ]
 
-const EdInaiPage = ({ onBack }) => {
+const EdInaiPage = ({ onBack, onGoToPrice }) => {
+  const handleBreadcrumbClick = (target) => {
+    if (target === 'top') {
+      window.scrollTo({ top: 0, behavior: 'smooth' })
+      return
+    }
+
+    if (target === 'price') {
+      onGoToPrice?.()
+    }
+  }
+
   return (
     <div className="login-page edinai-page">
       <aside className="login-sidebar">
@@ -112,9 +124,29 @@ const EdInaiPage = ({ onBack }) => {
           <button type="button" className="login-main__back" onClick={onBack} aria-label="Go back">
             <span aria-hidden="true">←</span>
           </button>
-          <div className="student-login__breadcrumb">
-            <span className="student-login__breadcrumb-text">EdInai</span>
-          </div>
+          <nav className="student-login__breadcrumb" aria-label="Breadcrumb">
+            <span className="student-login__breadcrumb-prefix" aria-hidden="true">
+              ›
+            </span>
+            <button
+              type="button"
+              className="student-login__breadcrumb-button student-login__breadcrumb-text student-login__breadcrumb-text--link"
+              onClick={() => handleBreadcrumbClick('top')}
+            >
+              EdInai
+            </button>
+            <span className="student-login__breadcrumb-separator" aria-hidden="true">
+              ›
+            </span>
+            <button
+              type="button"
+              className="student-login__breadcrumb-button student-login__breadcrumb-text student-login__breadcrumb-text--current"
+              onClick={() => handleBreadcrumbClick('price')}
+              aria-current="page"
+            >
+              Price
+            </button>
+          </nav>
           <div className="login-main__actions">
             <button type="button" className="icon-button" aria-label="Go to home">
               <svg className="icon" viewBox="0 0 24 24" aria-hidden="true">
@@ -263,6 +295,7 @@ const EdInaiPage = ({ onBack }) => {
         <StreamsSection />
           <AdaptSection />
           <FaqSection />
+        <SiteFooter />
       </main>
     </div>
   )

@@ -1,0 +1,179 @@
+.edinai-price {
+  display: flex;
+  flex-direction: column;
+  gap: 3.5rem;
+  align-items: center;
+  padding: 4rem 0 2.5rem;
+}
+
+.edinai-price__intro {
+  text-align: center;
+}
+
+.edinai-price__title {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+}
+
+.edinai-price__subtitle {
+  font-size: 1.05rem;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.edinai-price__plans {
+  width: min(1120px, 94vw);
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 2.25rem;
+  align-items: stretch;
+}
+
+.edinai-price-card {
+  background: linear-gradient(180deg, rgba(241, 237, 237, 0.96), rgba(228, 221, 221, 0.96));
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 28px;
+  padding: 2.75rem 2.4rem 2.35rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.65rem;
+  box-shadow: 0 28px 52px rgba(224, 214, 214, 0.45);
+  transition: transform 0.35s ease, border-color 0.35s ease, box-shadow 0.35s ease;
+  height: 100%;
+}
+
+.edinai-price-card--featured {
+  transform: translateY(-18px);
+  border-color: rgba(255, 255, 255, 0.3);
+}
+
+.edinai-price-card--error {
+  border-color: rgba(255, 90, 90, 0.55);
+  box-shadow: 0 24px 60px rgba(228, 225, 225, 0.18);
+}
+
+.edinai-price-card--error:hover,
+.edinai-price-card--error:focus-within {
+  border-color: #ff6262;
+  transform: translateY(-6px);
+  box-shadow: 0 28px 70px rgba(255, 76, 76, 0.28);
+}
+
+.edinai-price-card__header {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  align-items: center;
+  text-align: center;
+}
+
+.edinai-price-card__title {
+  font-size: 1.6rem;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+}
+
+.edinai-price-card__subtitle {
+  font-size: 1.02rem;
+  line-height: 1.55;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.edinai-price-card__features {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.edinai-price-card__feature {
+  position: relative;
+  padding-left: 1.35rem;
+  font-size: 0.98rem;
+  line-height: 1.55;
+  color: rgba(255, 255, 255, 0.82);
+}
+
+.edinai-price-card__feature::before {
+  content: '›';
+  position: absolute;
+  left: 0;
+  color: rgba(255, 255, 255, 0.65);
+}
+
+.edinai-price-card__footer {
+  margin-top: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: flex-start;
+}
+
+.edinai-price-card__price {
+  font-size: 2.25rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+.edinai-price-card__cadence {
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.7);
+  margin-left: 0.4rem;
+}
+
+.edinai-price-card__cta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.85rem 2.6rem;
+  border-radius: 999px;
+  border: none;
+  background: #ffffff;
+  color: #020202;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.edinai-price-card__cta:hover,
+.edinai-price-card__cta:focus-visible {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 32px rgba(255, 255, 255, 0.15);
+  outline: none;
+}
+
+@media (max-width: 960px) {
+  .edinai-price__plans {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 2rem;
+  }
+
+  .edinai-price-card,
+  .edinai-price-card--featured {
+    transform: none;
+  }
+}
+
+@media (max-width: 640px) {
+  .edinai-price {
+    padding: 3rem 0 1.5rem;
+    gap: 2.75rem;
+  }
+
+  .edinai-price__title {
+    font-size: 2.5rem;
+  }
+
+  .edinai-price__plans {
+    grid-template-columns: 1fr;
+    gap: 1.75rem;
+  }
+
+  .edinai-price-card {
+    padding: 2.25rem 2rem 2rem;
+  }
+}

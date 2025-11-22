@@ -11,6 +11,37 @@
   text-transform: capitalize;
 }
 
+.student-login__breadcrumb-prefix,
+.student-login__breadcrumb-separator {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 1.05rem;
+  margin: 0 0.35rem;
+  letter-spacing: 0.05em;
+}
+
+.student-login__breadcrumb-button {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  color: inherit;
+  font: inherit;
+}
+
+.student-login__breadcrumb-button:hover,
+.student-login__breadcrumb-button:focus-visible {
+  color: #ffffff;
+  outline: none;
+}
+
+.student-login__breadcrumb-text--link {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.student-login__breadcrumb-text--current {
+  font-weight: 650;
+}
+
 .login-subheading {
   margin: 0.75rem 550px 2rem auto;
   font-size: 1.05rem;
